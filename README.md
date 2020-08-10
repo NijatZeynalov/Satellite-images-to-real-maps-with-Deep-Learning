@@ -30,3 +30,5 @@ After taking screenshot of random unrealistic map, I rescaled pixel values to 25
 
 
 We can continue training the model for another 100 epochs and evaluate whether the additional training results in further improvements in image quality.
+
+You can read my [blog post](https://www.nijatzeynalov.com/post/d%C9%99rin-%C3%B6yr%C9%99nm%C9%99-il%C9%99-peykd%C9%99n-g%C9%99l%C9%99n-foto%C5%9F%C9%99kill%C9%99ri-real-x%C9%99rit%C9%99l%C9%99r%C9%99-%C3%A7evirm%C9%99-pix2pix-neyron-%C5%9F%C9%99b%C9%99k%C9%99-modeli) related to this project.
