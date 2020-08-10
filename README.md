@@ -18,4 +18,15 @@ The generated image appears to be a reasonable translation of the source image. 
 
 After this,  I developed a Pix2Pix model to translate Google Maps images to plausible satellite images. This requires that the model invent (or hallucinate) plausible buildings, roads, parks, and more. Image quality improves over the training process. For translating standalone Google Maps images to satellite images, I changed the order of the datasets.
 
-I decided to convert unrealistic maps to satellite images to make my project more interesting. I used the oskarstalberg.com site to create unrealistic maps. Each time you tap the screen on this site, a city map is generated which is not exist in the real world. After taking screenshot of random unrealistic map, I rescaled pixel values to 256 × 256.
+I decided to convert unrealistic maps to satellite images to make my project more interesting. I used the oskarstalberg.com site to create unrealistic maps. Each time you tap the screen on this site, a city map is generated which is not exist in the real world. 
+
+
+<a href="https://static.wixstatic.com/media/c11292_4b312377c1284cf5a142bfb80a979bcb~mv2.gif"><img src="https://static.wixstatic.com/media/c11292_4b312377c1284cf5a142bfb80a979bcb~mv2.gif"/></a>
+
+
+After taking screenshot of random unrealistic map, I rescaled pixel values to 256 × 256. As before, we can load our saved Pix2Pix generator model and generate a translation of the loaded image. Finally, we can scale the pixel values back to the range [0,1] and plot the result.
+
+![seher](https://user-images.githubusercontent.com/31247506/89767860-71de4b80-db03-11ea-96c0-b36f3085c75e.PNG)
+
+
+We can continue training the model for another 100 epochs and evaluate whether the additional training results in further improvements in image quality.
